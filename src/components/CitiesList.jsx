@@ -30,10 +30,10 @@ const CitiesList = () => {
             <Row>
                 <Col>
                     <div className="list-group" id="list-tab" role="tablist">
-                        <a className="list-group-item list-group-item-action disabled">Another cities</a>
+                        <div className="list-group-item list-group-item-action disabled">Another cities</div>
                         {cities.map((name, index) => (
-                            <a key={index} className={`list-group-item list-group-item-action clickable ${cityName === name ? "active" : ""}`}
-                                onClick={() => onClickCity(name)}>{name}</a>
+                            <div key={index} className={`list-group-item list-group-item-action clickable ${cityName === name ? "active" : ""}`}
+                                onClick={() => onClickCity(name)}>{name}</div>
                         ))}
                     </div>
                 </Col>

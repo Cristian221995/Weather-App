@@ -1,10 +1,10 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import store from '../redux/store';
-import '../styles/App.css';
-import Footer from './Footer';
-import Navbar from './Navbar';
-import WeatherDetails from './WeatherDetails';
+import store from './redux/store';
+import './styles/App.css';
+import Footer from './components/Footer';
+import Navbar from './components/Navbar';
+import WeatherDetails from './components/WeatherDetails';
 
 const App = () => {
   return (
