@@ -35,27 +35,6 @@ body {
   flex: 1 1 auto
 }
 
-@media (max-width:991.98px) {
-  .padding {
-      padding: 1.5rem
-  }
-}
-
-@media (max-width:767.98px) {
-  .padding {
-      padding: 1rem
-  }
-}
-
-.padding {
-  padding: 5rem
-}
-
-.grid-margin,
-.purchace-popup>div {
-  margin-bottom: 25px
-}
-
 .card {
   border: 0;
   border-radius: 2px
@@ -75,7 +54,7 @@ body {
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem
+  border-radius: 0.25rem;
 }
 
 .card-weather .card-body:first-child {
@@ -169,4 +148,8 @@ p {
 
 .card-weather .weakly-weather .weakly-weather-item i {
   font-size: 1.2rem
+}
+
+.clickable {
+	cursor: pointer;
 }

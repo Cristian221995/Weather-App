@@ -1,18 +1,22 @@
 import React from 'react';
-import './App.css';
-import Footer from './footer';
-import Navbar from './navbar';
-import WeatherCard from './weatherCard';
+import { Provider } from 'react-redux';
+import store from '../redux/store';
+import '../styles/App.css';
+import Footer from './Footer';
+import Navbar from './Navbar';
+import WeatherDetails from './WeatherDetails';
 
 const App = () => {
   return (
-    <div className="App">
-      <Navbar/>
-      <div className="App-container">
-        <WeatherCard/>
+    <Provider store={store}>
+      <div className="App">
+        <Navbar />
+        <div className="App-container">
+          <WeatherDetails />
+        </div>
+        <Footer />
       </div>
-      <Footer/>
-    </div>
+    </Provider>
   );
 }
 
